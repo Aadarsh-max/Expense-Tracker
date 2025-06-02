@@ -1,4 +1,4 @@
-export const BASE_URL = "https://expense-backend-snowy.vercel.app"; //backend url
+export const BASE_URL = "https://expense-back-one.vercel.app"; //backend url
 
 export const API_PATHS = {
   AUTH: {
