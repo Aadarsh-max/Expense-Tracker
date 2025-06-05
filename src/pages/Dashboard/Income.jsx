@@ -101,9 +101,12 @@ const Income = () => {
         }
       );
 
-      // Validate response: avoid treating JSON (error response) as success
-      if (!response.data || response.data.type.includes("application/json")) {
-        toast.error("Download failed or returned invalid file");
+      const contentType = response.headers["content-type"];
+      if (!response.data || contentType?.includes("application/json")) {
+        // Try to decode the blob to get the error message
+        const text = await response.data.text?.();
+        console.error("Received JSON instead of Excel:", text);
+        toast.error("Download failed or returned invalid file.");
         return;
       }
 

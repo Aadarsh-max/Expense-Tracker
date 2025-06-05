@@ -107,9 +107,11 @@ const Expense = () => {
         }
       );
 
-      // Check if response is not Excel (e.g., error message sent as JSON)
-      if (!response.data || response.data.type.includes("application/json")) {
-        toast.error("Download failed or returned invalid file");
+      const contentType = response.headers["content-type"];
+      if (!response.data || contentType?.includes("application/json")) {
+        const text = await response.data.text?.();
+        console.error("Received JSON instead of Excel:", text);
+        toast.error("Download failed or invalid file received.");
         return;
       }
 
@@ -120,10 +122,8 @@ const Expense = () => {
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-
       const currentDate = new Date().toISOString().split("T")[0];
       link.setAttribute("download", `expense_details_${currentDate}.xlsx`);
-
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
