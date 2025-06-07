@@ -38,17 +38,3 @@ An intuitive full-stack Expense Tracker web application built using the **MERN s
 - Smart categorization of transactions by type
 
 ---
-
-## 📸 Screenshots
-
-> Include screenshots or a GIF demo of your dashboard here for better visualization.
-
----
-
-## 🚀 Getting Started
-
-### Clone the repo
-
-```bash
-git clone https://github.com/yourusername/expense-tracker.git
-cd expense-tracker
