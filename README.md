@@ -6,7 +6,7 @@ An intuitive full-stack Expense Tracker web application built using the **MERN s
 
 ## 🚀 Live Demo
 
-> Coming soon or add your deployed link here!
+> https://expense-tracker-gamma-dun.vercel.app
 
 ---
 
