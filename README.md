@@ -1,12 +1,40 @@
-# React + Vite
+# 💸 Expense Tracker – MERN Stack Interactive Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intuitive full-stack Expense Tracker web application built using the **MERN stack** (MongoDB, Express, React, Node.js). This app allows users to manage their finances effectively, with smart visualization, real-time updates, and downloadable reports.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+> https://expense-tracker-gamma-dun.vercel.app
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Tech Stack
+
+- **Frontend:** React, Tailwind CSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB with Mongoose  
+- **Data Visualization:** Chart.js / Recharts  
+- **File Export:** `xlsx` (Excel file generation)
+
+---
+
+## 💡 Key Features
+
+### 📊 Dynamic Finance Dashboard
+- Displays **Total Balance**, **Income**, and **Expenses**
+- Includes **Pie**, **Bar**, and **Line Charts** to show spending trends
+
+### ➕ Add Transactions
+- Add income and expenses using clean, responsive forms
+- Supports **Emoji Picker** for fun and intuitive categorization
+
+### 📁 Download Data
+- Export your financial data as an **Excel sheet** with one click
+
+### ⚡ Real-Time Updates
+- All transactions update instantly across charts and summaries
+- Smart categorization of transactions by type
+
+---
