@@ -12,7 +12,6 @@ import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
 import UserProvider from "./context/UserContext";
 import { Toaster } from "react-hot-toast";
-import Footer from "./components/Layouts/Footer";
 
 const App = () => {
   return (
@@ -27,7 +26,6 @@ const App = () => {
             <Route path="/income" exact element={<Income />} />
             <Route path="/expense" exact element={<Expense />} />
           </Routes>
-            <Footer/>
         </Router>
       </div>
 
